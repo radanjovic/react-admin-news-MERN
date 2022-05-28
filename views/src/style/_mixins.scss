@@ -1,0 +1,30 @@
+@mixin flex($align, $justify, $direction: row) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin drop-shadow() {
+    filter: drop-shadow(0 0 0.1rem #BEC6D9);
+}
+
+@mixin input() {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: $black;
+    @include drop-shadow();
+
+    border: 1px solid rgba(0,0,0, 0%);
+    outline: none;
+
+    padding: 12px 20px;
+    border-radius: 15px;
+
+    &:focus {
+        border: 1px solid #5561B3;
+    }
+}

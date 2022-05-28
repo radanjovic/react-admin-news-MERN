@@ -1,0 +1,95 @@
+.sidebarDiv {
+  min-height: 100vh;
+  border-radius: 10px;
+  background-color: #FFF;
+  color: #6D7587;
+  padding-left: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebarDiv h1 {
+  color: #000;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.sidebarDiv h1 span {
+  font-weight: 300;
+}
+
+.sidebarDiv ul li {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  padding-bottom: 20px;
+}
+
+.sidebarDiv ul li a {
+  text-decoration: none;
+}
+
+.sidebarDiv ul li a, .sidebarDiv ul li a:visited, .sidebarDiv ul li a:hover, .sidebarDiv ul li a:active {
+  color: inherit;
+}
+
+.sidebarDiv .newsPadding {
+  padding-bottom: 20px;
+}
+
+.sidebarDiv .sidebarDivContainer {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.sidebarDiv .sidebarDivContainer .sidebarIconTitleGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+.sidebarDiv .sidebarDivContainer .sidebarIconTitleGroup .sidebarNewsIcon {
+  color: black;
+}
+
+.sidebarDiv .sidebarDivContainer .sidebarIconTitleGroup h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.sidebarDiv .sidebarDivContainer .sidebarArrowDown {
+  width: 30px;
+  padding-right: 5px;
+}
+/*# sourceMappingURL=Sidebar.css.map */

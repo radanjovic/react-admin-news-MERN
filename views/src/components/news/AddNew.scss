@@ -1,0 +1,212 @@
+@import '../../style/mixins';
+@import '../../style/vars';
+
+.addNewNewsSection {
+
+    & > p {
+        font-family: $poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    & > form {
+        display: grid;
+        grid-template-columns: 8fr 4fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+
+        .addNewMainSection {
+
+            .addNewsImageContainer {
+                min-height: 170px;
+                border: 2px dashed #CCD4DE;
+                border-radius: 10px;
+                padding: 25px 20px 15px;
+
+                @include flex(flex-start, space-around, column);
+                gap: 10px;
+
+                #imagesHolder {
+                    min-height: 120px;
+                    @include flex(center, flex-start);
+                    flex-wrap: wrap;
+                }
+
+                label {
+                    font-family: $openSans;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: $gray;
+                    font-weight: 400;
+                    cursor: pointer;
+
+                    #uploadBold {
+                        font-weight: 700;
+                    }
+
+                    input {
+                        display: none;
+                    }
+                }
+            }
+
+            .isDragActive {
+                border-width: 3px;
+                position: relative;
+
+                & > div {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            h2 {
+                margin: 0;
+
+                font-size: 26px;
+                font-weight: 700;
+                line-height: 20px;
+        
+                margin-bottom: 15px;
+            }
+
+            input {
+                @include input();
+                font-weight: 500;
+            }
+
+            h3 {
+                margin-top: 20px;
+                margin-bottom: 10px;
+
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 20px;
+            }
+
+            h4 {
+                margin: 0;
+                margin-bottom: 10px;
+
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25px;
+                color: $gray;
+            }
+
+            textarea {
+                @include input();
+                font-family: $poppins;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25px;
+                height: 120px;
+
+                margin-bottom: 10px;
+
+            }
+
+            #biggerTextarea {
+                height: 300px;
+            }
+        }
+
+        .addNewSidebar {
+            
+
+            .addNewButtonContainer {
+                @include flex(center, flex-end);
+                gap: 10px;
+                margin: 0;
+                margin-bottom: 15px;
+
+                button {
+                    @include flex(center, center);
+                    gap: 5px;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    border-radius: 10px;
+
+                    cursor: pointer;
+
+                    padding: 8px 16px;
+
+                    font-family: $poppins;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: $black;
+                    font-weight: 600;
+
+                    .addNewCheckIcon, .addNewEyeIcon {
+                        width: 18px;
+                        height: 18px;
+                    }
+
+                    .addNewCheckIcon {
+                        color: $white;
+                    }
+
+                    .addNewEyeIcon {
+                        color: $gray;
+                    }
+                }
+
+                #saveButton {
+                    background-color: $green;
+                    color: $white;
+                }
+            }
+
+            .addNewAdditionalContentSection {
+                padding: 30px;
+
+                & > div {
+                    margin: 15px 0;
+                    color: $gray;
+                    @include flex(flex-start, flex-start, column);
+                    gap: 10px;
+
+                    & > label, & > span {
+                        font-family: $poppins;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 25px;
+                    }
+
+                    select, input {
+                        @include input();
+                        color: $gray;
+                    }
+                }
+
+                #showAllCategoriesArrowDiv {
+                    display: block;
+                    width: 100%;
+                    position: relative;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+
+                #showAllCategoriesArrow {
+                    position: absolute;
+                    right: 0;
+                    width: 20px;
+                    height: 20px;
+                }
+                }
+
+            }
+
+            .categoriesHolder {
+                @include flex(center, flex-start);
+                flex-wrap: wrap;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,39 @@
+@import '../../style/mixins';
+@import '../../style/vars';
+
+.mainLayout {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+    background-color: $bg;
+    // @include flex(flex-start,flex-start);
+
+    width: 100%;
+    min-height: 100vh;
+
+    margin-top: 20px;
+
+    #sidebar, #content {
+        border-radius: 10px;
+    }
+
+    #sidebar {
+        min-height: 100vh;
+        margin: 0 20px 20px 20px;
+        // width: 12%;
+    }
+
+    #content {
+        background-color: $bg;
+        padding: 0.2rem 1rem;
+        // flex: 1;
+
+        form {
+            background-color: $white;
+            padding: 20px 30px;
+            border-radius: 15px;
+        }
+    }
+}

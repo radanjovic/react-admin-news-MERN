@@ -1,0 +1,98 @@
+.paginationSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.paginationSection > span {
+  font-family: "Poppins", sans-serif;
+}
+
+.pagination-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.pagination-container .pagination-item {
+  font-family: "Poppins", sans-serif;
+  padding: 10px 15px;
+  text-align: center;
+  margin: auto 4px;
+  color: #161F5E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.01071em;
+  border-radius: 5px;
+  line-height: 1.43;
+  font-size: 13px;
+}
+
+.pagination-container .pagination-item.dots:hover {
+  background-color: transparent;
+  cursor: default;
+}
+
+.pagination-container .pagination-item:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+
+.pagination-container .pagination-item.selected {
+  background-color: #5561B3;
+  color: #FFF;
+}
+
+.pagination-container .pagination-item .arrow::before {
+  position: relative;
+  /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+  content: '';
+  /* By using an em scale, the arrows will size with the font */
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  border-right: 0.12em solid #5561B3;
+  border-top: 0.12em solid #5561B3;
+}
+
+.pagination-container .pagination-item .arrow.left {
+  -webkit-transform: rotate(-135deg) translate(-50%);
+          transform: rotate(-135deg) translate(-50%);
+}
+
+.pagination-container .pagination-item .arrow.right {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.pagination-container .pagination-item.disabled {
+  pointer-events: none;
+}
+
+.pagination-container .pagination-item.disabled .arrow::before {
+  border-right: 0.12em solid rgba(0, 0, 0, 0.2);
+  border-top: 0.12em solid rgba(0, 0, 0, 0.2);
+}
+
+.pagination-container .pagination-item.disabled:hover {
+  background-color: transparent;
+  cursor: default;
+}
+/*# sourceMappingURL=Pagination.css.map */

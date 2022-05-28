@@ -1,0 +1,202 @@
+.loginSection {
+  min-height: 100vh;
+  position: relative;
+}
+
+.loginSection .invalidDivs {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: #161F5E;
+  color: #FFF;
+  border-radius: 10px;
+}
+
+.loginSection .invalidDivs::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  border-left: 5px solid transparent;
+  border-right: 5px solid #161F5E;
+  border-top: 5px solid #161F5E;
+  border-bottom: 5px solid transparent;
+  left: -4px;
+  top: 9px;
+}
+
+.loginSection .usernameIsInvalidDiv {
+  position: absolute;
+  top: 34.5%;
+  left: 105%;
+}
+
+.loginSection .passwordIsInvalidDiv {
+  position: absolute;
+  top: 53%;
+  left: 105%;
+}
+
+.loginSection .loginForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  background-color: #FFF;
+  border-radius: 20px;
+}
+
+.loginSection .loginForm .loginFormError, .loginSection .loginForm .inputError {
+  color: red;
+}
+
+.loginSection .loginForm .inputError {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+
+.loginSection .loginForm .loginFormContainer {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.loginSection .loginForm .loginFormContainer h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 700;
+}
+
+.loginSection .loginForm .loginFormContainer h1 span {
+  font-weight: 300;
+}
+
+.loginSection .loginForm .loginFormContainer input, .loginSection .loginForm .loginFormContainer button {
+  width: 100%;
+  max-width: 360px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  line-height: 25px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  outline: none;
+  border-radius: 15px;
+  -webkit-filter: drop-shadow(0 0 0.1rem #BEC6D9);
+          filter: drop-shadow(0 0 0.1rem #BEC6D9);
+}
+
+.loginSection .loginForm .loginFormContainer input:focus {
+  border: 1px solid #2569cf;
+}
+
+.loginSection .loginForm .loginFormContainer .validInput {
+  border: 1px solid #4FAC68;
+}
+
+.loginSection .loginForm .loginFormContainer .invalidInput {
+  border: 1px solid #DF4149;
+}
+
+.loginSection .loginForm .loginFormContainer button {
+  background-color: #4FAC68;
+  color: #FFF;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.loginSection .loginForm .loginFormContainer button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.loginSection .loginForm .loginFormContainer .loginFormCheckboxDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: block;
+  position: relative;
+  margin: 1rem 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #161F5E;
+}
+
+.loginSection .loginForm .loginFormContainer .loginFormCheckboxDiv .checkboxText {
+  position: relative;
+  right: 30px;
+  top: 3px;
+}
+
+.loginSection .loginForm .loginFormContainer .loginFormCheckboxDiv input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.loginSection .loginForm .loginFormContainer .loginFormCheckboxDiv .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 100%;
+}
+
+.loginSection .loginForm .loginFormContainer .loginFormCheckboxDiv:hover input ~ .checkmark {
+  background-color: #ccc;
+  border-radius: 100%;
+}
+
+.loginSection .loginForm .loginFormContainer .loginFormCheckboxDiv input:checked ~ .checkmark {
+  background-color: #5561B3;
+  border-radius: 100%;
+}
+
+.loginSection .loginForm .loginFormContainer .loginFormCheckboxDiv .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.loginSection .loginForm .loginFormContainer .loginFormCheckboxDiv input:checked ~ .checkmark:after {
+  display: block;
+}
+/*# sourceMappingURL=Login.css.map */

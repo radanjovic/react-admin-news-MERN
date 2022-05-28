@@ -1,0 +1,55 @@
+@import '../../style/mixins';
+@import '../../style/vars';
+
+#profileSection {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+
+    .profileSidebar {
+        @include flex(flex-start, flex-start, column);
+        gap: 10px;
+
+        h2 {
+            margin: 0;
+            margin-bottom: 1.2rem;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 20px;
+        }
+
+        a {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            @include flex(center, flex-start);
+            gap: 10px;
+            text-decoration: none;
+            background-color: $bg;
+            color: $gray;
+            font-family: $poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 25px;
+            padding: 10px;
+            border-radius: 10px;
+            
+        }
+        .activeProfileLink {
+            background-color: $purple;
+            color: $white
+        }
+
+        .profileIcons {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .profileSectionContent {
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,21 @@
+#addImagesCointainer {
+  display: inline;
+}
+
+#addImagesCointainer img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#addImagesCointainer svg {
+  position: relative;
+  bottom: 100px;
+  right: 20px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=ImageHolder.css.map */

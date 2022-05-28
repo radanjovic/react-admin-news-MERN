@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,oBAAoB,CAAC;EACjB,OAAO,EAAE,MAAM;CAiBlB;;AAlBD,AAGI,oBAHgB,CAGhB,GAAG,CAAC;EACA,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,KAAK;EACjB,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;EACnB,aAAa,EAAE,IAAI;CACtB;;AAVL,AAYI,oBAZgB,CAYhB,GAAG,CAAC;EACA,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,OAAO;CAClB",
+    "sources": [
+        "ImageHolder.scss",
+        "../../style/_mixins.scss",
+        "../../style/_vars.scss"
+    ],
+    "names": [],
+    "file": "ImageHolder.css"
+}

@@ -1,0 +1,61 @@
+@import '../../style/mixins';
+@import '../../style/vars';
+
+#profileGeneralSection {
+
+    .profileFormImageDiv {
+        width: 100%;
+
+        .profileFormImageDivImageContainer {
+            width: 120px;
+        }
+
+        .profileFormImageDivContentContainer {
+            flex: 1;
+
+            @include flex(flex-start, flex-start, column);
+
+            div {
+                @include flex(center, center);
+                gap: 10px;
+
+                button {
+                    padding: 8px 15px;
+                    border-radius: 5px;
+                }
+
+                #uploadImageButton {
+                    @include flex(center, center);
+                    gap: 13px;
+                    background-color: $green;
+                    color: $white;
+                    padding: 8px 15px;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    font-family: $poppins;
+                    font-size: 12px;
+                    font-weight: 600;
+                    line-height: 16px;
+
+                    input {
+                        display: none;
+                    }
+                }
+            }
+
+            p {
+                color: $gray;
+                font-family: $poppins;
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 500;
+            }
+            
+        }
+    }
+
+    
+}

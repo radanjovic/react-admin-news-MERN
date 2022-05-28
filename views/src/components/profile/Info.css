@@ -1,0 +1,61 @@
+#profileSectionCountrySelector, #profileSectionBioInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  margin: 25px 0;
+  font-family: "Poppins", sans-serif;
+  color: #6D7587;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+#profileSectionCountrySelector select, #profileSectionCountrySelector textarea, #profileSectionBioInfo select, #profileSectionBioInfo textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000;
+  -webkit-filter: drop-shadow(0 0 0.1rem #BEC6D9);
+          filter: drop-shadow(0 0 0.1rem #BEC6D9);
+  border: 1px solid rgba(0, 0, 0, 0);
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 15px;
+}
+
+#profileSectionCountrySelector select:focus, #profileSectionCountrySelector textarea:focus, #profileSectionBioInfo select:focus, #profileSectionBioInfo textarea:focus {
+  border: 1px solid #5561B3;
+}
+
+#profileSectionCountrySelector select:focus, #profileSectionCountrySelector textarea:focus, #profileSectionBioInfo select:focus, #profileSectionBioInfo textarea:focus {
+  border: 1px solid #2569cf;
+}
+
+#profileSectionCountrySelector textarea, #profileSectionBioInfo textarea {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  height: 120px;
+}
+
+#profileSectionCountrySelector .validInput, #profileSectionBioInfo .validInput {
+  border: 1px solid #4FAC68;
+}
+
+#profileSectionCountrySelector .invalidInput, #profileSectionBioInfo .invalidInput {
+  border: 1px solid #DF4149;
+}
+/*# sourceMappingURL=Info.css.map */

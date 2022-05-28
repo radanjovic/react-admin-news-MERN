@@ -1,0 +1,33 @@
+@import '../../style/mixins';
+@import '../../style/vars';
+
+.categoryNotSelected {
+    @include flex(center, space-between);
+    gap: 10px;
+    width:fit-content;
+    background-color: $green;
+    color: $white;
+    
+    margin: 5px;
+    border-radius: 10px;
+    // padding: 0px 15px;
+
+    .categoryNotSelectedText {
+        font-family: $poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+        padding: 10px 10px 10px 0px;
+    }
+
+    .categoryNotSelectedButton {
+        cursor: pointer;
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 0px 5px;
+        // width: 18px;
+        // height: 18px;
+        font-size: 25px;
+        position: relative;
+        top: 2px;
+    }
+}

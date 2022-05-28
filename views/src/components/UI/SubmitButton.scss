@@ -1,0 +1,26 @@
+@import '../../style/mixins';
+@import '../../style/vars';
+
+.submitButton {
+    @include flex(center, center);
+    gap: 7px;
+    border: none;
+    outline: none;
+    background-color: $green;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    padding: 12px 18px;
+
+    font-family: $poppins;
+    font-size: 12px;
+    line-height: 16px;
+    color: $white;
+    font-weight: 600;
+
+    .checkIcon {
+        width: 12px;
+        height: 12px;
+    }
+}

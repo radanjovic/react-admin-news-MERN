@@ -1,0 +1,89 @@
+#profileGeneralSection .profileFormImageDiv {
+  width: 100%;
+}
+
+#profileGeneralSection .profileFormImageDiv .profileFormImageDivImageContainer {
+  width: 120px;
+}
+
+#profileGeneralSection .profileFormImageDiv .profileFormImageDivContentContainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#profileGeneralSection .profileFormImageDiv .profileFormImageDivContentContainer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+#profileGeneralSection .profileFormImageDiv .profileFormImageDivContentContainer div button {
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+#profileGeneralSection .profileFormImageDiv .profileFormImageDivContentContainer div #uploadImageButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 13px;
+  background-color: #4FAC68;
+  color: #FFF;
+  padding: 8px 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+#profileGeneralSection .profileFormImageDiv .profileFormImageDivContentContainer div #uploadImageButton input {
+  display: none;
+}
+
+#profileGeneralSection .profileFormImageDiv .profileFormImageDivContentContainer p {
+  color: #6D7587;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=General.css.map */

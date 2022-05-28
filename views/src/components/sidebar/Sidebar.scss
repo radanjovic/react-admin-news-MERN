@@ -1,0 +1,78 @@
+@import '../../style/mixins';
+@import '../../style/vars';
+
+.sidebarDiv {
+    min-height: 100vh;
+    border-radius: 10px;
+    background-color: $white;
+    color: $gray;
+    padding-left: 1.2rem;
+    // padding-top: 0.5rem;
+    font-family: $poppins;
+
+    h1 {
+        color: $black;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+        font-family: $openSans;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+
+        span {
+            font-weight: 300;
+        }
+    }
+
+    ul {
+        li {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+
+            padding-bottom: 20px;
+
+            a {
+                text-decoration: none;
+            }
+            a, a:visited, a:hover, a:active {
+                color: inherit;
+            }
+        }
+    }
+
+    .newsPadding {
+        padding-bottom: 20px;
+    }
+
+    .sidebarDivContainer{
+        cursor: pointer;
+        @include flex(center, space-between);
+
+        .sidebarIconTitleGroup{
+            @include flex(center, flex-start);
+            gap: 10px;
+
+
+            .sidebarNewsIcon {
+                color: black;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+
+                font-family: $poppins;
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 500;
+            }
+        }
+        .sidebarArrowDown{
+            width: 30px;
+            padding-right: 5px;
+        }
+    }
+
+}

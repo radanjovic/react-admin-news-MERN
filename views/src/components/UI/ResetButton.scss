@@ -1,0 +1,19 @@
+@import '../../style/mixins';
+@import '../../style/vars';
+
+.resetButton {
+    border: none;
+    outline: none;
+    background-color: $bg;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    padding: 12px 18px;
+
+    font-family: $poppins;
+    font-size: 12px;
+    line-height: 16px;
+    color: $black;
+    font-weight: 600;
+}

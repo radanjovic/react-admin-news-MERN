@@ -1,0 +1,128 @@
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#header .menuIconDiv .menuIcon {
+  cursor: pointer;
+}
+
+#header .headerContent {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+#header .headerContent #searchInput {
+  background-color: #FFF;
+}
+
+#header .headerContent .headerContentDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+#header .headerContent input {
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+  border-radius: 10px;
+  width: 55%;
+  max-width: 550px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+#header .headerContent .headerName {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+#header .headerContent .headerImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#header .headerContent .headerImage img {
+  width: 36px;
+  height: 36px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+
+#header .headerContent .headerImage .onlineIcon {
+  z-index: 10;
+  position: relative;
+  right: 0.5rem;
+}
+
+#header .headerContent .headerDots {
+  width: 36px;
+  height: 24px;
+  color: #6D7587;
+  cursor: pointer;
+}
+
+.signOutDiv {
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  color: #5561B3;
+  font-weight: 700;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Header.css.map */

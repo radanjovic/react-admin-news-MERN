@@ -1,0 +1,46 @@
+@import '../../style/mixins';
+@import '../../style/vars';
+
+
+.profileSection {
+    h3 {
+        margin: 1rem 0;
+        font-family: $openSans;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    form {
+        & > div {
+            @include flex(center, center);
+            gap: 15px;
+    
+            & > div {
+                width: 50%;
+            }
+        }
+    
+        span {
+            display: inline-block;
+            @include flex(center, flex-start);
+            gap: 10px;
+            margin-top: 20px;
+    
+            small {
+                font-family: $poppins;
+    
+            }
+            .submittingMessage {
+                color: $purple;
+            }
+    
+            .successMessage {
+                color: $green;
+            }
+    
+            .errorMessage {
+                color: red;
+            }
+        }
+    }
+}

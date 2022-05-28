@@ -1,0 +1,169 @@
+.newsListSection {
+  padding: 10px;
+}
+
+.newsListSection > p {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.newsListSection .newsListErr {
+  color: red;
+}
+
+.newsListSection .newsListMsg {
+  color: #5561B3;
+}
+
+.newsListSection .newsListScs {
+  color: #4FAC68;
+}
+
+.newsListSection h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.newsListSection .newsListSectionFilterDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.newsListSection .newsListSectionFilterDiv span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #6D7587;
+}
+
+.newsListSection .newsListSectionFilterDiv span select {
+  border: none;
+  outline: none;
+  color: #6D7587;
+  font-weight: 700;
+  -webkit-filter: drop-shadow(0 0 0.1rem #BEC6D9);
+          filter: drop-shadow(0 0 0.1rem #BEC6D9);
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.newsListSection .newsListSectionFilterDiv #filterResults {
+  color: #3A416F;
+  padding: 15px;
+  padding-right: 50px;
+  background-color: #FFF;
+  border-radius: 15px;
+}
+
+.newsListSection table {
+  margin: 50px 0px;
+  width: 100%;
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.newsListSection table tr {
+  width: 100%;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #6D7587;
+}
+
+.newsListSection table tr th, .newsListSection table tr td {
+  border-bottom: 1px solid #D2D6DA;
+}
+
+.newsListSection table tr .tableNO {
+  width: 10%;
+}
+
+.newsListSection table tr .tableTitle {
+  width: 50%;
+}
+
+.newsListSection table tr .tableDate {
+  width: 15%;
+}
+
+.newsListSection table tr .tableTime {
+  width: 15%;
+}
+
+.newsListSection table tr .tableAction {
+  width: 10%;
+}
+
+.newsListSection table tr .tableAction span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+.newsListSection table tr .tableAction .tableActionButton {
+  cursor: pointer;
+}
+
+.newsListSection table tr .tableContentBold, .newsListSection table tr .tableContentReg {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 600;
+  color: #3A416F;
+  padding: 15px 0;
+}
+
+.newsListSection table tr .tableContentBold {
+  font-weight: 600;
+}
+
+.newsListSection table tr .tableContentReg {
+  font-weight: 500;
+}
+/*# sourceMappingURL=NewsList.css.map */

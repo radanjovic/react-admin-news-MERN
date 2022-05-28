@@ -1,0 +1,22 @@
+@import '../../style/mixins';
+@import '../../style/vars';
+
+#addImagesCointainer {
+    display: inline;
+
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    svg {
+        position: relative;
+        bottom: 100px;
+        right: 20px;
+        cursor: pointer;
+    }
+}

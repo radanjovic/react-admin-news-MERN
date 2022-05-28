@@ -1,0 +1,26 @@
+@import '../../style/mixins';
+@import '../../style/vars';
+
+.customInput {
+    @include flex(flex-start, flex-start, column);
+    gap: 10px;
+    margin: 25px 0;
+
+    font-family: $poppins;
+    color: $gray;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+
+    input {
+        @include input();
+    }
+
+    .validInput {
+        border: 1px solid #4FAC68;
+    }
+    
+    .invalidInput {
+        border: 1px solid #DF4149;
+    }
+}

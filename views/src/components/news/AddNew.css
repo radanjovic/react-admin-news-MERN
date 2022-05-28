@@ -1,0 +1,313 @@
+.addNewNewsSection > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: center;
+}
+
+.addNewNewsSection > form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8fr 4fr;
+      grid-template-columns: 8fr 4fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.addNewNewsSection > form .addNewMainSection .addNewsImageContainer {
+  min-height: 170px;
+  border: 2px dashed #CCD4DE;
+  border-radius: 10px;
+  padding: 25px 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.addNewNewsSection > form .addNewMainSection .addNewsImageContainer #imagesHolder {
+  min-height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.addNewNewsSection > form .addNewMainSection .addNewsImageContainer label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6D7587;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.addNewNewsSection > form .addNewMainSection .addNewsImageContainer label #uploadBold {
+  font-weight: 700;
+}
+
+.addNewNewsSection > form .addNewMainSection .addNewsImageContainer label input {
+  display: none;
+}
+
+.addNewNewsSection > form .addNewMainSection .isDragActive {
+  border-width: 3px;
+  position: relative;
+}
+
+.addNewNewsSection > form .addNewMainSection .isDragActive > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.addNewNewsSection > form .addNewMainSection h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.addNewNewsSection > form .addNewMainSection input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000;
+  -webkit-filter: drop-shadow(0 0 0.1rem #BEC6D9);
+          filter: drop-shadow(0 0 0.1rem #BEC6D9);
+  border: 1px solid rgba(0, 0, 0, 0);
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+.addNewNewsSection > form .addNewMainSection input:focus {
+  border: 1px solid #5561B3;
+}
+
+.addNewNewsSection > form .addNewMainSection h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.addNewNewsSection > form .addNewMainSection h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #6D7587;
+}
+
+.addNewNewsSection > form .addNewMainSection textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000;
+  -webkit-filter: drop-shadow(0 0 0.1rem #BEC6D9);
+          filter: drop-shadow(0 0 0.1rem #BEC6D9);
+  border: 1px solid rgba(0, 0, 0, 0);
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.addNewNewsSection > form .addNewMainSection textarea:focus {
+  border: 1px solid #5561B3;
+}
+
+.addNewNewsSection > form .addNewMainSection #biggerTextarea {
+  height: 300px;
+}
+
+.addNewNewsSection > form .addNewSidebar .addNewButtonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.addNewNewsSection > form .addNewSidebar .addNewButtonContainer button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000;
+  font-weight: 600;
+}
+
+.addNewNewsSection > form .addNewSidebar .addNewButtonContainer button .addNewCheckIcon, .addNewNewsSection > form .addNewSidebar .addNewButtonContainer button .addNewEyeIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.addNewNewsSection > form .addNewSidebar .addNewButtonContainer button .addNewCheckIcon {
+  color: #FFF;
+}
+
+.addNewNewsSection > form .addNewSidebar .addNewButtonContainer button .addNewEyeIcon {
+  color: #6D7587;
+}
+
+.addNewNewsSection > form .addNewSidebar .addNewButtonContainer #saveButton {
+  background-color: #4FAC68;
+  color: #FFF;
+}
+
+.addNewNewsSection > form .addNewSidebar .addNewAdditionalContentSection {
+  padding: 30px;
+}
+
+.addNewNewsSection > form .addNewSidebar .addNewAdditionalContentSection > div {
+  margin: 15px 0;
+  color: #6D7587;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.addNewNewsSection > form .addNewSidebar .addNewAdditionalContentSection > div > label, .addNewNewsSection > form .addNewSidebar .addNewAdditionalContentSection > div > span {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.addNewNewsSection > form .addNewSidebar .addNewAdditionalContentSection > div select, .addNewNewsSection > form .addNewSidebar .addNewAdditionalContentSection > div input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000;
+  -webkit-filter: drop-shadow(0 0 0.1rem #BEC6D9);
+          filter: drop-shadow(0 0 0.1rem #BEC6D9);
+  border: 1px solid rgba(0, 0, 0, 0);
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 15px;
+  color: #6D7587;
+}
+
+.addNewNewsSection > form .addNewSidebar .addNewAdditionalContentSection > div select:focus, .addNewNewsSection > form .addNewSidebar .addNewAdditionalContentSection > div input:focus {
+  border: 1px solid #5561B3;
+}
+
+.addNewNewsSection > form .addNewSidebar .addNewAdditionalContentSection #showAllCategoriesArrowDiv {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.addNewNewsSection > form .addNewSidebar .addNewAdditionalContentSection #showAllCategoriesArrowDiv #showAllCategoriesArrow {
+  position: absolute;
+  right: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.addNewNewsSection > form .addNewSidebar .categoriesHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*# sourceMappingURL=AddNew.css.map */

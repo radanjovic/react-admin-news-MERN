@@ -1,0 +1,132 @@
+@import '../../style/mixins';
+@import '../../style/vars';
+
+.newsListSection {
+    padding: 10px;
+
+    & > p {
+        font-family: $poppins;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+    }
+    .newsListErr {
+        color: red;
+    }
+    .newsListMsg {
+        color: $purple;
+    }
+    .newsListScs {
+        color: $green;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+
+    .newsListSectionFilterDiv {
+        @include flex(center, space-between);
+
+        span {
+            @include flex(center, space-around);
+            gap: 20px;
+            font-family: $poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 25px;
+            color: $gray;
+
+            select {
+                border: none;
+                outline: none;
+                color: $gray;
+                font-weight: 700;  
+                @include drop-shadow();
+                padding: 10px 20px;
+                border-radius: 15px;
+                cursor: pointer;
+            }
+        }
+
+        #filterResults {
+            color: $tableContent;
+            padding: 15px;
+            padding-right: 50px;
+            background-color: $white;
+            border-radius: 15px;
+        }
+    }
+
+    table {
+        margin: 50px 0px;
+        width: 100%;
+        background-color: $white;
+        padding: 20px;
+        border-radius: 15px;
+        tr {
+            width: 100%;
+            text-align: left;
+
+            font-family: $poppins;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 20px;
+            color: $gray;
+
+            th, td {
+                border-bottom: 1px solid #D2D6DA;
+            }
+
+            .tableNO {
+                width: 10%;
+            }
+
+            .tableTitle {
+                width: 50%;
+            }
+
+            .tableDate {
+                width:15%;
+            }
+
+            .tableTime {
+                width: 15%;
+            }
+            
+            .tableAction {
+                width: 10%;
+
+                span {
+                    @include flex(center, flex-start);
+                    gap: 20px;
+                }
+
+                .tableActionButton {
+                    cursor: pointer;
+                }
+            }
+
+            .tableContentBold, .tableContentReg {
+                font-family: $poppins;
+                font-size: 15px;
+                line-height: 23px;
+                font-weight: 600;
+                color: $tableContent;
+                padding: 15px 0;
+            }
+
+            .tableContentBold {
+                font-weight: 600;
+            }
+
+            .tableContentReg {
+                font-weight: 500;
+            }
+        }
+    }
+}

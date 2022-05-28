@@ -1,0 +1,81 @@
+#profileSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 9fr;
+      grid-template-columns: 3fr 9fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+}
+
+#profileSection .profileSidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+#profileSection .profileSidebar h2 {
+  margin: 0;
+  margin-bottom: 1.2rem;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+#profileSection .profileSidebar a {
+  display: inline-block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  text-decoration: none;
+  background-color: #F4F5FC;
+  color: #6D7587;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#profileSection .profileSidebar .activeProfileLink {
+  background-color: #5561B3;
+  color: #FFF;
+}
+
+#profileSection .profileSidebar .profileIcons {
+  width: 25px;
+  height: 25px;
+}
+
+#profileSection .profileSectionContent {
+  margin-top: 25px;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=ProfileLayout.css.map */
