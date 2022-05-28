@@ -20,6 +20,8 @@ Then add .env file with 4 variables:
 
 MONGO_URI(with your own mongo atlas uri), ACCESS_TOKEN_SECRET(random long string as a secret for creating and verifying access tokens), REFRESH_TOKEN_SECRET(random long string as a secret for creating and verifying refresh tokens), and DOMAIN(domain for your site - in development: http://localhost:5000)
 
+Then add static folder in main directory, with 1 sub-folder: images, which in turn has 2 sub-folder: posts and users - this is needed for image upload functionality to work properly
+
 Finally, to concurrently run both server and react app, run the command bellow FROM THE MAIN FOLDER:
 
 `npm run dev`
