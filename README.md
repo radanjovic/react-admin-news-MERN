@@ -1,6 +1,6 @@
 # Project Description
 
-Full MERN stack app with the login functionality, in which users can log in and share their news with other users. Users also can change their basic info and passwords, and edit and delete their own posts. This app was made in accordance with design from adobexd file in this directory.
+Full MERN stack app with the login functionality, in which users can log in and share their 'news' (or posts in other words) with other users. Users also can change their basic info and passwords, and edit and delete their own posts. App also features full image upload functionality, for user images, but also post images. This app was made in accordance with design from adobexd file in this directory.
 
 Login is done with JWT using refresh tokens technique which sends access tokens to users and stores them in memory (RAM), without storing them in localStorage or anything else, and when they expire, user's requests will bounce, at which point the response from server will be intercepted (with the help from axios) and new access token will be requested from server, using refresh token. If refresh token is valid (after lookup in DB) - new access token will be generated and sent... Users can also persist their state by checking Remember me when logging in, and if they do, their state will persist even if they leave site, close browser, etc. If they chose not, their sessions are only valid for as long as they don't leave the site.
 
@@ -16,9 +16,9 @@ Then do the same in views (where Create-React-App is located):
 
 `cd views && npm i`
 
-Then add .env file with 3 variables: 
+Then add .env file with 4 variables: 
 
-MONGO_URI(with your own mongo atlas uri), ACCESS_TOKEN_SECRET(random long string as a secret for creating and verifying access tokens), and REFRESH_TOKEN_SECRET(random long string as a secret for creating and verifying refresh tokens)
+MONGO_URI(with your own mongo atlas uri), ACCESS_TOKEN_SECRET(random long string as a secret for creating and verifying access tokens), REFRESH_TOKEN_SECRET(random long string as a secret for creating and verifying refresh tokens), and DOMAIN(domain for your site - in development: http://localhost:5000)
 
 Finally, to concurrently run both server and react app, run the command bellow FROM THE MAIN FOLDER:
 
